@@ -1,0 +1,7 @@
+  04005 MUSIC       8 LEC   A  4.0  GR      T T   12:30-01:50   SSLH 100       
+   30300 PHILOS     29 LEC A    4.0  GR     M W F  09:00-09:50   SSLH 100       
+   30303 PHILOS     29 DIS   3  0.0  GR     M      10:00-10:50   HICF 100M      
+   34130 COMPSCI   132 LEC   A  4.0  GR mc  M W    03:30-04:50   SSL  228       
+   34131 COMPSCI   132 DIS   1  0.0  GR    TBA     TBA  -TBA     TBA  TBA       
+   34350 COMPSCI   171 LEC   A  4.0  GR mc   T T   11:00-12:20   ICS  174       
+   34351 COMPSCI   171 DIS 1    0.0  GR mc  M      02:00-02:50   MSTB 118 
