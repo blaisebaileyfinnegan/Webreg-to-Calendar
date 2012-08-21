@@ -1,0 +1,12 @@
+* { font-family: Verdana; }
+label { font-size: 96%; color: #6D7B8D; width: 25em; float: left;  }
+label.error {  font-size: 96%; float: none; color: red; padding-left: .5em; }
+#status {  font-size: 96%; float: none; color: red; width:800px; height:60px }
+div.logout { font-size: 70%; text-align: left; }
+h1 {  font-size: 200%; color: #6D7B8D; }
+p {  font-size: 96%;  clear: both; }
+p.credits { font-size: 70%; }
+.submit {  font-size: 96%; margin-left: 12em; }
+em {  font-size: 96%; font-weight: bold; padding-right: 1em; }
+div.main { width: 800px; }
+#export{height: 20px;}

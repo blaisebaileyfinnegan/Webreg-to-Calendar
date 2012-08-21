@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+     <servlet>
+        <servlet-name>auth</servlet-name>
+        <servlet-class>edu.uci.mvu1.webreg2cal.AuthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>auth</servlet-name>
+        <url-pattern>/auth</url-pattern>
+    </servlet-mapping>
+  <servlet>
+  	<servlet-name>oauth2Callback</servlet-name>
+    <servlet-class>edu.uci.mvu1.webreg2cal.OAuth2Callback</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>calendar</servlet-name>
+    <servlet-class>edu.uci.mvu1.webreg2cal.CalendarServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>ical_serve</servlet-name>
+  <servlet-class>edu.uci.mvu1.webreg2cal.ServeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ical_serve</servlet-name>
+    <url-pattern>/ical_serve</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>calendar</servlet-name>
+    <url-pattern>/calendar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>oauth2Callback</servlet-name>
+    <url-pattern>/oauth2callback/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>auth</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+    <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>any</web-resource-name>
+      <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>*</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  
+ <servlet>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+  <init-param>
+   <param-name>services</param-name>
+   <param-value/>
+  </init-param>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <url-pattern>/_ah/spi/*</url-pattern>
+ </servlet-mapping>
+ <context-param>
+ <param-name>com.sun.faces.enableThreading</param-name>
+ <param-value>false</param-value>
+ </context-param>
+</web-app>
