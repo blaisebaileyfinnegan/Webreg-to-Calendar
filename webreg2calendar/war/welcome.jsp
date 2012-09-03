@@ -43,7 +43,9 @@
   </form>
 <div id="status"></div>
 <p class="credits">
-Classes which are TBA will not be included. You should always check to make sure that classes were correctly interpreted by the app before you start using any downloaded calendar.<br/> Created by Michael Vu<br/> To report a bug, send an email to mvu1.at.uci.edu</p>
+Classes which are TBA will not be included. You should always check to make sure that classes were correctly interpreted by the app before you start using any downloaded calendar.
+<br/>
+<a href="about.html">About</a>
 </div>
 
 
